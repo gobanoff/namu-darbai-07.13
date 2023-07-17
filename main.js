@@ -132,21 +132,17 @@ for (let i = 0; i < 5; i++) {
 
 document.getElementById("zwek").innerHTML = `Dideliu smūgių:  ${res}`;
 
+// 1 ir 2 Uzduotis
 
-// 6 Uzduotis
+let v = 0;
+let re = "";
+while (v < 625) {
+  if (v % 25 === 0) re += "<br />";
 
+  if (v % 26 === 0 || v % 24 === 0) {
+    re += '<span style="color: red;">*  </span>';
+  } else re += `* `;
+  v++;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.getElementById("sign").innerHTML = re;
